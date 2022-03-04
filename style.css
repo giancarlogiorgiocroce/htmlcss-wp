@@ -6,7 +6,7 @@
 }
 
 .container{
-    width: 80%;
+    width: 60%;
     margin: 0 auto 5px;
     max-width: 1600px;
     min-width: 600px;
@@ -26,11 +26,18 @@
 
 /* HEADER */
 header div.banner{
-    background-color: rgb(229, 121, 230);
+    /* background-color: rgb(229, 121, 230); */
+    height: 9vh;
+}
+
+.banner img{
+    max-height: 100%;
+    padding-right: 15px;
+    border-right: thin solid lightgrey;
 }
 
 header nav{
-    padding-bottom: 10px;
+    padding: 10px 0;
 }
 
 header nav ul{
@@ -50,13 +57,31 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    text-decoration: underline;
-    color: blue;
+    color: brown;
 }
 
 header div.jumbotron{
-    background-color: rgb(225, 214, 122);
-    height: 30vh;
+    /* background-color: rgb(225, 214, 122); */
+    background-image: url('img/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+div.layover{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+div.layover h1, div.layover span{
+    color: white;
+    text-align: left;
+    display: inline-block;
+    max-width: 55%;
+    padding-left: 3%;
+    
 }
 /* /HEADER */
 
