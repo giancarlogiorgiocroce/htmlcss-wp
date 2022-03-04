@@ -27,6 +27,20 @@
     color: grey;
     font-size: small;
 }
+
+.layover{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.img{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /* /GENERAL */
 
 
@@ -77,12 +91,6 @@ header div.jumbotron{
     overflow: hidden;
 }
 
-div.layover{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
 div.layover h1, div.layover span{
     color: white;
     text-align: left;
@@ -98,18 +106,17 @@ div.layover h1{
 
 
 /* MAIN */
-main{
+/* main{
     height: 40vh;
-    /* background-color: rgb(0, 135, 255); */
+    background-color: rgb(0, 135, 255);
 }
 
 main div{
     margin-bottom: 10px;
 }
-
+} */
 main div.colonna{
     float: left;
-    height: 35vh;
 }
 
 main div.colonna.laterale{
@@ -119,7 +126,27 @@ main div.colonna.laterale{
 main div.colonna.centrale{
     width: calc(60% - 20px);
     margin: 0 10px;
+    background-color: blue;
 }
+
+div.grandezza-img{
+    height: 12vh;
+}
+
+.img.sx{
+    background-image: url('img/img-1.jpg');
+}
+
+.img.cx{
+    background-image: url('img/banner-2.jpg');
+}
+
+.img.dx{
+    background-image: url('img/img-3.jpg');
+   
+}
+
+
 /* /MAIN */
 
 
